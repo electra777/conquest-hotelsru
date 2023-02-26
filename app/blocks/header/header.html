@@ -1,7 +1,12 @@
-<header class="header @@class">
-    <div class="header__inner ">
+<header class="header">
+    <div class="header__inner container">
+        @@include('../logo/logo.html')
         @@include('../nav/nav.html')
-
+        <div class="header__controls">
+            <a href="#" class="header__link header__search"></a>
+            <a href="#" class="header__link header__like"><span class="header__link-count">1</span></a>
+            <a href="#" class="header__link header__cart"></a>
+        </div>
     </div>
 
 </header>

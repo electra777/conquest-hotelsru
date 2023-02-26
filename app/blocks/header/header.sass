@@ -1,1 +1,39 @@
 .header
+  width: 100%
+  &__inner
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__controls
+    display: flex
+    gap: 23px
+  &__link
+    text-decoration: none
+    display: inline-block
+    height: 17px
+  &__search
+    background: url('./../img/search.svg') no-repeat
+    width: 16px
+  &__like
+    background: url('./../img/like.svg') no-repeat
+    width: 21px
+    position: relative
+  &__link-count
+    position: absolute
+    display: flex
+    align-items: center
+    justify-content: center
+    top: -3px
+    right: -7px
+    color: $text
+    font-size: 8px
+    font-weight: 400
+    line-height: 9px
+    background-color: #E6C8B4
+    border-radius: 50%
+    width: 13px
+    height: 13px
+  &__cart
+    background: url('./../img/cart.svg') no-repeat
+    width: 18px
