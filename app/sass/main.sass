@@ -46,7 +46,6 @@ b, strong
 	font-weight: bold
 
 .wrapper
-	display: flex
 	position: relative
 	width: 100%
 	max-width: 1920px
@@ -58,8 +57,11 @@ b, strong
 	width: 100%
 	margin: 0 auto
 	height: 100%
+	@media (max-width: 1170px)
+		padding: 0 20px
 
 @import "../blocks/header/header.sass"
 @import "../blocks/logo/logo.sass"
 @import "../blocks/nav/nav.sass"
+@import "../blocks/logo-footer/logo-footer.sass"
 @import "../blocks/footer/footer.sass"
