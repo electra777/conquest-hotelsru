@@ -67,9 +67,218 @@ b, strong
 	line-height: 43px
 	color: $text
 
+.button
+	display: inline-block
+	text-align: center
+	height: 64px
+	background-color: $accent
+	color: $white
+	text-transform: uppercase
+	text-decoration: none
+	font-family: RobotoMedium, sans-serif
+	font-size: 12px
+	font-weight: 500
+	line-height: 14px
+	letter-spacing: 0.05em
+	padding: 26px 38px
+
+.collection
+	display: flex
+	align-items: center
+	margin-bottom: 80px
+	&__col:nth-of-type(2)
+		margin-left: -60px
+	&__title
+		font-size: 45px
+		font-weight: 400
+		line-height: 1
+		padding-left: 65px
+		margin: 0 0 15px
+		position: relative
+		z-index: 10
+	&__title::before
+		content: ''
+		position: absolute
+		width: 50px
+		height: 1px
+		background-color: #8B8371
+		left: 0
+		top: 0
+		bottom: 0
+		margin: auto
+	&__sub-title
+		font-size: 30px
+		font-weight: 400
+		line-height: 40px
+		padding-left: 65px
+		margin-bottom: 40px
+	&__text
+		font-family: RobotoLight, sans-serif
+		font-size: 14px
+		font-weight: 300
+		line-height: 21px
+		color: $text
+		opacity: 0.82
+		padding-left: 65px
+		margin-bottom: 65px
+	&__btn
+		margin-left: 65px
+	&__img-wrapper
+		position: relative
+	&__img
+
+	&__price
+		font-family: Prata, sans-serif
+		color: $text
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+		position: absolute
+		top: 150px
+		left: 115px
+	&__price-rub
+		font-family: Prata, sans-serif
+		color: $text
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+		padding-right: 65px
+		position: relative
+	&__price-rub::after
+		content: ''
+		position: absolute
+		width: 50px
+		height: 1px
+		background-color: #8B8371
+		right: 0
+		top: 0
+		bottom: 0
+		margin: auto
+	&__diameter
+		font-family: Prata, sans-serif
+		color: $text
+		font-size: 16px
+		font-weight: 400
+		line-height: 22px
+		position: absolute
+		right: -145px
+		bottom: 130px
+	&__diameter-line
+		position: relative
+		padding-left: 65px
+	&__diameter-line::before
+		content: ''
+		position: absolute
+		width: 50px
+		height: 1px
+		background-color: #8B8371
+		left: 0
+		top: 0
+		bottom: 0
+		margin: auto
+
+.popular
+	margin-bottom: 85px
+	&__title
+		text-align: center
+	&__more-link
+		text-decoration: none
+		font-family: RobotoMedium, sans-serif
+		font-size: 16px
+		font-weight: 500
+		line-height: 19px
+		color: $accent
+		display: block
+		max-width: 104px
+		border-bottom: 1px solid #C4C0B6
+		padding: 11px 0
+		margin-left: auto
+		margin-bottom: 25px
+	&__row
+		display: grid
+		grid-template-columns: repeat(auto-fill, 370px)
+		justify-content: center
+	&__cart
+		background-color: #FDFDFB
+		padding: 40px 36px
+	&__cart-title
+		font-family: PlayfairDisplayBold, sans-serif
+		font-size: 14px
+		font-weight: 700
+		line-height: 24px
+		letter-spacing: 0.03em
+		color: $text
+		opacity: 0.82
+		margin-bottom: 10px
+	&__cart-price
+		font-family: PrataRegular, sans-serif
+		font-size: 12px
+		font-weight: 400
+		line-height: 16px
+		color: $text
+		opacity: 0.82
+	&__cart-rub
+		color: $text
+		opacity: 0.82
+	&__cart-img
+		max-width: 315px
+	&__cart-detail
+		text-decoration: none
+		font-family: PlayfairDisplayRegular, sans-serif
+		font-size: 16px
+		font-weight: 400
+		line-height: 21px
+		color: $text
+		padding-left: 50px
+		position: relative
+	&__cart-detail::before
+		content: ''
+		position: absolute
+		width: 30px
+		height: 1px
+		background-color: #8B8371
+		left: 0
+		top: 0
+		bottom: 0
+		margin: auto
+
+.quality
+	background: url('../img/bg-quality.jpg') no-repeat
+	background-size: cover
+	background-position: center center
+	height: 520px
+	&__row
+		padding: 0 80px
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		gap: 70px
+		align-items: center
+		height: 100%
+	&__col
+	&__col:first-of-type
+		max-width: 520px
+	&__title
+		margin-bottom: 38px
+	&__text
+		font-size: 16px
+		font-weight: 400
+		line-height: 150%
+		color: $accent
+		margin-bottom: 45px
+	&__btn
+		background-color: #D4B098
+	&__controls
+		max-width: 45px
+	&__btn-prev::after
+		color: $text
+		font-size: 10px
+	&__btn-next::after
+		color: $text
+		font-size: 10px
+
 .news
 	display: flex
-	justify-content: center
+	justify-content: space-between
 	align-items: center
 	margin-bottom: 90px
 	&__col
@@ -89,15 +298,15 @@ b, strong
 	&__social-link
 
 	&__social-link_instagram
-		background: url('./../img/instagram-icon.svg') no-repeat
+		background: url('../img/instagram-icon.svg') no-repeat
 		width: 23px
 		height: 24px
 	&__social-link_facebook
-		background: url('./../img/facebook-icon.svg') no-repeat
+		background: url('../img/facebook-icon.svg') no-repeat
 		width: 12px
 		height: 22px
 	&__social-link_twitter
-		background: url('./../img/twitter-icon.svg') no-repeat
+		background: url('../img/twitter-icon.svg') no-repeat
 		width: 22px
 		height: 18px
 	&__img-box
