@@ -5,6 +5,11 @@
     display: grid
     grid-template-columns: repeat(4, 1fr)
     gap: 118px
+    @media (max-width: 1150px)
+      gap: 30px
+    @media (max-width: 780px)
+      grid-template-columns: repeat(2, 1fr)
+
   &__col
 
   &__phone

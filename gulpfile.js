@@ -90,7 +90,7 @@ gulp.task('code', function () {
 gulp.task('watch', function () {
 	gulp.watch('app/' + 'sass' + '/**/*.' + 'sass' + '', gulp.parallel('styles'));
 	gulp.watch('app/blocks/**/*.sass', gulp.parallel('styles'));
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
+	gulp.watch(['libs/**/*.js', 'app/js/main.js'], gulp.parallel('scripts'));
 	gulp.watch('app/blocks/**/*.html', gulp.parallel('fileinclude'));
 	gulp.watch('app/pages/**/*.html', gulp.parallel('fileinclude'));
 	gulp.watch('app/*.html', gulp.parallel('code'));
